@@ -1,0 +1,17 @@
+img {
+  max-width: 100%; //Изображение не будет шире, чем родительский контейнер. Если исходная ширина меньше 100% — картинка не растянется больше оригинала.
+  height: auto; //Высота подстраивается автоматически, чтобы сохранить соотношение сторон.
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

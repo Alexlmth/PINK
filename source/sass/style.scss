@@ -1,5 +1,6 @@
-@import "./sticky-footer.scss";
-@import "./fonts.scss";
-@import "./global.scss";
+//global
+@import "./global/fonts.scss";
+@import"./global/variables.scss";
+@import"./global/global.scss";
 // blocks
-
+@import "./blocks/page.scss";
