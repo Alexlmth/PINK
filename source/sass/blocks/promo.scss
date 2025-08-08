@@ -1,0 +1,40 @@
+.page-main__header{
+  background-color: #1D2631;
+  color: #FFFFFF;
+}
+.promo_container{
+  position: relative;
+  width: 320px;
+  height: 638px;
+  margin: 0 auto;
+  padding-top: 95px;
+  background-image: url("../../img/back-mobil.png");
+  background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    padding-top: 91px;
+    background-image: url("../../img/back-tablet.png");
+  }
+}
+.promo__heading{
+  margin: 0 auto;
+  width: 280px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    line-height: 120%;
+    font-size: 40px;
+    margin-left:74px;
+    margin-top: 115px;
+  }
+}
+.promo__download{
+  position: absolute;
+  top: 462px;
+  @media (min-width: $tablet-width) {
+    top: 350px;
+    left: 20px;
+}
+}

@@ -1,0 +1,45 @@
+.download{
+  width: 280px;
+  padding: 28px 20px 38px 20px;
+}
+.download__button{
+  width: 280px;
+  text-align: center;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 49px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  border: solid 3px #FFFFFF;
+  border-radius: 27.5px;
+  margin-bottom: 32px;
+  @media (min-width: $tablet-width) {
+   // width: 300px;
+}
+}
+.logotypes{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 38px 0 38px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.download__text {
+  font-size: 14px;
+  line-height: 24px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;         /* по вертикали */
+  justify-content: center;    /* по горизонтали */
+  text-align: center;         /* на случай переноса текста */
+}
+img{
+  display: block;
+}

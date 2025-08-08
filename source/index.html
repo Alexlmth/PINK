@@ -7,17 +7,21 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="page-header__nav page-header__nav--opened ">
+      <nav class="page-header__nav page-header__nav--closed">
         <div class="page-header__bar">
           <a class="page-header__logo logo">
-            <img src="img/pink.svg" width="74" height="23" alt="Логотип«Pink»">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/pink.svg" width="74" height="23" alt="Логотип«Pink»">
+            </picture>
           </a>
           <button class="page-header__toggler" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="main-nav__link">
               главная
             </a>
@@ -41,10 +45,37 @@
       </nav>
     </header>
     <main class="page-main main-container ">
-      <p>main-container</p>
+      <header class="page-main__header promo ">
+        <div class="promo_container container">
+          <h1 class="promo__heading">
+            Взгляните на жизнь иначе!
+          </h1>
+          <div class="promo__download download">
+            <button class="download__button" type="button">
+              Скачать приложение
+            </button>
+            <ul class="download__logotype-list logotypes ">
+              <li class="logotypes__item">
+                <img src="./img/apple-logo.svg" width="47" height="56" alt="Логотип«apple»">
+              </li>
+              <li class="logotypes__item">
+                <img src="./img/android-logo.svg" width="43" height="47" alt="Логотип«android»">
+              </li>
+              <li class="logotypes__item">
+                <img src="./img/microsoft-logo.svg" width="44" height="41" alt="Логотип«microsoft»">
+              </li>
+            </ul>
+            <p class="download__text">
+              Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+
+        </div>
+      </header>
     </main>
     <footer class="page-footer">
       <p>page-footer</p>
     </footer>
   </body>
 </html>
+
