@@ -69,6 +69,7 @@ img {
 @media (min-width: 1200px) {
   .page-header {
     background-color: rgba(0, 0, 0, 0.3);
+    width: 1200px;
   }
 }
 
@@ -279,6 +280,14 @@ img {
     background-image: url("../../img/back-tablet.png");
   }
 }
+@media (min-width: 1200px) {
+  .promo_container {
+    width: 1200px;
+    min-height: 762px;
+    padding-top: 91px;
+    background-image: url("../../img/back-desktop.png");
+  }
+}
 
 .promo__heading {
   margin: 0 auto;
@@ -289,11 +298,20 @@ img {
 }
 @media (min-width: 768px) {
   .promo__heading {
-    width: 180px;
+    width: 190px;
     line-height: 120%;
     font-size: 40px;
     margin-left: 74px;
     margin-top: 115px;
+  }
+}
+@media (min-width: 1200px) {
+  .promo__heading {
+    width: 240px;
+    line-height: 65px;
+    font-size: 50px;
+    margin-left: 160px;
+    margin-top: 125px;
   }
 }
 
@@ -304,18 +322,29 @@ img {
 @media (min-width: 768px) {
   .promo__download {
     top: 350px;
-    left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .promo__download {
+    left: 105px;
+    top: 420px;
   }
 }
 
 .download {
-  width: 280px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   padding: 28px 20px 38px 20px;
+}
+@media (min-width: 768px) {
+  .download {
+    width: 340px;
+  }
 }
 
 .download__button {
-  width: 280px;
-  text-align: center;
   background-color: transparent;
   color: #FFFFFF;
   font-family: "Open Sans";
@@ -328,14 +357,36 @@ img {
   border-radius: 27.5px;
   margin-bottom: 32px;
 }
+@media (min-width: 768px) {
+  .download__button {
+    margin-bottom: 46px;
+  }
+}
+@media (min-width: 1200px) {
+  .download__button {
+    margin-bottom: 67px;
+  }
+}
+
 .logotypes {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 38px 0 38px;
+  padding: 0 38px;
   margin: 0;
   margin-bottom: 28px;
+}
+@media (min-width: 768px) {
+  .logotypes {
+    padding: 0 48px;
+    margin-bottom: 38px;
+  }
+}
+@media (min-width: 1200px) {
+  .logotypes {
+    margin-bottom: 58px;
+  }
 }
 
 .download__text {
@@ -351,6 +402,11 @@ img {
   /* по горизонтали */
   text-align: center;
   /* на случай переноса текста */
+}
+@media (min-width: 768px) {
+  .download__text {
+    height: 37px;
+  }
 }
 
 img {
