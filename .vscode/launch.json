@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Launch Chrome with debugging, attached to BrowserSync
+      "name": "Debug Browser (Chrome)",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:3000", // BrowserSync default port
+      "webRoot": "${workspaceFolder}/source",
+      "sourceMaps": true
+    }
+  ]
+}
